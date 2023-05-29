@@ -5,7 +5,7 @@ html {
 
 body {
   height: 100%;
-  background: radial-gradient(circle, #373a45 0%, #ccd2dd 100%), radial-gradient(circle, #ccd2dd 0%, #373a45 100%);
+  background: radial-gradient(circle, #6d717b 0%, #373a45 100%), radial-gradient(circle, #373a45 0%, #6d717b 100%);
   background-size: 1000% 1000%;
   background-position: 50% 50%;
   animation: ripple 5s linear infinite;
@@ -54,7 +54,11 @@ a, a:hover {
     margin-right: 1em;
 }
 
-
+/* 小文本样式 */
+.small-text {
+    font-size: 14px;
+    color: rgb(200, 200, 240);
+  }
 
 /* 应用于小屏幕设备的样式 */
 @media (max-width: 1100px) {
@@ -88,17 +92,11 @@ a, a:hover {
     .link img {
       width: auto;
       height: 2.5em;
-      margin-right: 2em;
+      margin-right: 1.5em;
     }
-  }
-
-
-/* 一些其他样式的初始化 */
-
-
-
-/* 小文本样式 */
-.small-text {
-  font-size: 14px;
-  color: rgb(200, 200, 240);
+  
+    .small-text {
+        font-size: 20px;
+        color: rgb(190, 190, 230);
+    }
 }

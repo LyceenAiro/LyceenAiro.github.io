@@ -1,0 +1,95 @@
+/* 主要样式 */
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: radial-gradient(circle, #373a45 0%, #ccd2dd 100%), radial-gradient(circle, #ccd2dd 0%, #373a45 100%);
+  background-size: 1000% 1000%;
+  background-position: 50% 50%;
+  animation: ripple 5s linear infinite;
+}
+
+.container {
+  background-color: rgba(230, 230, 250, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+}
+
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+h1, h2, p, div {
+  text-align: center;
+}
+
+a,
+a:hover {
+  color: rgb(255, 190, 239);
+  text-decoration: none;
+}
+
+.link-container {
+  display: inline-block;
+  justify-content: center;
+  text-align: left;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.link img {
+  width: auto;
+  height: 1.5em;
+  margin-right: 1em;
+}
+
+/* 应用于小屏幕设备的样式 */
+@media (max-width: 1100px) {
+  .container {
+    padding: 10px;
+  }
+
+  .container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 80%;
+    object-fit: contain;
+  }
+
+  h1 {
+    font-size: 72px;
+  }
+
+  h2 {
+    font-size: 54px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  a, a:hover {
+    font-size: 20px;
+  }
+
+  .link img {
+    height: 2em;
+    margin-right: 1.5em;
+  }
+}
+
+/* 小文本样式 */
+.small-text {
+  font-size: 14px;
+  color: rgb(200, 200, 240);
+}
